@@ -1,44 +1,37 @@
 <head>
   <link rel="stylesheet" type="text/css" href="/login.css">
   <link rel="stylesheet" type="text/css" href="/node_modules/angular-material/angular-material.css">
+  <link rel="stylesheet" href="/node_modules/material-design-icons">
   <script src="/node_modules/angular/angular.js"></script>
   <script src="/node_modules/angular-aria/angular-aria.js"></script>
   <script src="/node_modules/angular-animate/angular-animate.js"></script>
   <script src="/node_modules/angular-material/angular-material.js"></script>
-  <script type="text/javascript" src="/login.js"></script>
- 
+  <script src="/node_modules/material-design-icons"></script>
+  <script type="text/javascript" src="/js/login.js"></script>
+  <md-toolbar class="md-shrink">
+      <h2 class="md-flex"><center>LOGIN ADMINISTRATOR</center></h2>
+    </div>
+  </md-toolbar>
  
 </head>
 
 <div ng-app="app" ng-controller="DemoCtrl" layout="column" layout-padding ng-cloak>
+
   <br/>
   <md-content class="md-no-momentum">
     <md-input-container class="md-icon-float md-block">
       <!-- Use floating label instead of placeholder -->
-      <label>Name</label>
-      <md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon>
+      <label>Username</label>
+      <md-icon md-svg-src="ic_person_black_24px.svg" class="name"></md-icon>
       <input ng-model="user.name" type="text">
     </md-input-container>
-    <md-input-container md-no-float class="md-block">
-      <md-icon md-svg-src="img/icons/ic_phone_24px.svg"></md-icon>
-      <input ng-model="user.phone" type="text" placeholder="Phone Number">
-    </md-input-container>
-    <md-input-container class="md-block">
-      <!-- Use floating placeholder instead of label -->
-      <md-icon md-svg-src="img/icons/ic_email_24px.svg" class="email"></md-icon>
-      <input ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true">
-    </md-input-container>
-    <md-input-container md-no-float class="md-block">
-      <input ng-model="user.address" type="text" placeholder="Address" >
-      <md-icon md-svg-src="img/icons/ic_place_24px.svg" style="display:inline-block;"></md-icon>
-    </md-input-container>
-    <md-input-container class="md-icon-float md-icon-right md-block">
-      <label>Donation Amount</label>
-      <md-icon md-svg-src="img/icons/ic_card_giftcard_24px.svg"></md-icon>
-      <input ng-model="user.donation" type="number" step="0.01">
-      <md-icon md-svg-src="img/icons/ic_euro_24px.svg"></md-icon>
-    </md-input-container>
-  </md-content>
-</div>
 
-Name
+    <md-input-container md-no-float class="md-block">
+       <label>Password</label>
+      <md-icon md-svg-src="ic_lock_black_24px.svg"></md-icon>
+      <input ng-model="user.password" type="password">
+<br/>
+    <center><md-button class="md-raised">LOGIN</md-button></center>
+</div>
+      
+    
