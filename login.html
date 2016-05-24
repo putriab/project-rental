@@ -8,30 +8,58 @@
   <script src="/node_modules/angular-material/angular-material.js"></script>
   <script src="/node_modules/material-design-icons"></script>
   <script type="text/javascript" src="/js/login.js"></script>
-  <md-toolbar class="md-shrink">
-      <h2 class="md-flex"><center>LOGIN ADMINISTRATOR</center></h2>
-    </div>
-  </md-toolbar>
+<!--   <div layout="row">
+  <div flex="20">
+    [flex="20"]
+  </div>
+  <div flex="70">
+    [flex="70"]
+  </div>
+  <div flex hide-sm hide-xs>
+    [flex]
+  </div>
+</div>
+[flex="20"]
+ -->
+ 
  
 </head>
+
+
 
 <div ng-app="app" ng-controller="DemoCtrl" layout="column" layout-padding ng-cloak>
 
   <br/>
-  <md-content class="md-no-momentum">
-    <md-input-container class="md-icon-float md-block">
-      <!-- Use floating label instead of placeholder -->
-      <label>Username</label>
-      <md-icon md-svg-src="ic_person_black_24px.svg" class="name"></md-icon>
-      <input ng-model="user.name" type="text">
-    </md-input-container>
+<div id="wrapper_page">   
+  <div layout="row">
+    <div flex=""></div>
+    <div flex="20">
+    <md-toolbar>
+      <h4 class="md-flex"><center>LOGIN ADMINISTRATOR</center></h4>
+    </md-toolbar>
+     <center><img src="logo1.png" width="200px" height="120px" ></center>
+    <md-content class="md-no-momentum">
 
-    <md-input-container md-no-float class="md-block">
-       <label>Password</label>
-      <md-icon md-svg-src="ic_lock_black_24px.svg"></md-icon>
-      <input ng-model="user.password" type="password">
+  <md-input-container class="md-icon-float md-block">
+        <!-- Use floating label instead of placeholder -->
+
+        <label>Username</label>
+        <md-icon md-svg-src="ic_person_black_24px.svg" class="name"></md-icon>
+        <input ng-model="user.name" type="text">
+      </md-input-container>
+
+      <md-input-container md-no-float class="md-block">
+        <label>Password</label>
+        <md-icon md-svg-src="ic_lock_black_24px.svg"></md-icon>
+        <input ng-model="user.password" type="password">
+      </md-input-container>
+    </md-content>     
+    </div>
+    <div flex></div>
+  </div>
 <br/>
-    <center><md-button class="md-raised">LOGIN</md-button></center>
+    <center><md-button class="md-raised"><a href="vpas.html">LOGIN</a></md-button></center>
+    
 </div>
       
     
