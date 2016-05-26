@@ -16,7 +16,7 @@
   height: 48px; }
 
 .buttondemoBasicUsage section {
-  background: #f7f7f7;
+  background: #000000;
   border-radius: 3px;
   text-align: center;
   margin: 1em;
@@ -33,3 +33,13 @@
   left: 7px;
   font-size: 14px;
   opacity: 0.54; }
+
+.wrapper_page {
+	width: 350px;
+	margin: 50px auto 0px auto;
+	box-shadow: 0px 0px 20px 2px #2F4F4F;
+	position: relative;
+	background-color: #000000;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
