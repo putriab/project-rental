@@ -1,0 +1,66 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/node_modules/angular-material/angular-material.css">
+  <link rel="stylesheet" href="/node_modules/material-design-icons">
+  <script src="/node_modules/angular/angular.js"></script>
+  <script src="/node_modules/angular-aria/angular-aria.js"></script>
+  <script src="/node_modules/angular-animate/angular-animate.js"></script>
+  <script src="/node_modules/angular-material/angular-material.js"></script>
+  <script src="/node_modules/material-design-icons"></script>
+  <script type="text/javascript" src="/vpas.js"></script>
+  </head>
+<div ng-app="sidenavDemo1" ng-controller="AppCtrl" layout="column" style="height:460px;" ng-cloak>
+
+
+  <section layout="row" flex>
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+      <md-toolbar class>
+        <h1 class="md-toolbar-tools">V-PAS</h1>
+      </md-toolbar>
+      <md-content layout-padding ng-controller="LeftCtrl" style="background-color:#009688; ">
+        <ul class="nav nav-sidebar">
+
+	<li class="md-list-item-text" layout="column">
+  <md-list>
+	<a href="login.html">
+	<md-icon md-svg-src="ic_home_white_48px.svg"></md-icon>
+	<br/>
+	</i>
+	<span>Home</span>
+	</a>
+	</li>
+	<br/>
+	<li class>
+	<a href="tab.html">
+	<md-icon md-svg-src="ic_pages_white_48px.svg"></md-icon>
+	<br/>
+	</i>
+	<span>Katalog</span>
+	</a>
+	</li>
+	<br/>
+	<li class>
+	<a href="list.html">
+	<md-icon md-svg-src="ic_people_outline_white_48px.svg"></md-icon>
+	<br/>
+	</i>
+	<span>Customer</span>
+	</a>
+	</li>
+	<br/>
+	<li class>
+	<a href="listrad.html">
+	<md-icon md-svg-src="ic_payment_white_48px.svg"></md-icon>
+	<br/>
+	</i>
+	<span>Transaksi</span>
+	</a>
+	</li>
+	<br/>
+	</ul>
+  </md-list>
+      </md-content>
+    </md-sidenav>
+   
+      <div flex></div>
+
+</div>
